@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Equipment editor</title>
+
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+
+  <table class="equipment-table">
+    <thead>
+      <tr class="equipment-table__thr">
+        <th class="equipment-table__th">ID</th>
+        <th class="equipment-table__th">Name</th>
+        <th class="equipment-table__th">Power</th>
+        <th class="equipment-table__th">Edit</th>
+        <th class="equipment-table__th">Delete</th>
+      </tr>
+    </thead>
+    <tbody id="tblEquipment">
+      <tr class="equipment-table__tr">
+        <td class="equipment-table__td">(id)</td>
+        <td class="equipment-table__td">(name)</td>
+        <td class="equipment-table__td">(power)</td>
+        <td class="equipment-table__td">
+          <a href="#" class="equipment-table__edit">Edit</a>
+        </td>
+        <td class="equipment-table__td">
+          <a href="#" class="equipment-table__delete">Delete</a>
+        </td>
+      </tr>
+      <tr class="equipment-table__tr">
+        <td class="equipment-table__td">(id)</td>
+        <td class="equipment-table__td">(name)</td>
+        <td class="equipment-table__td">(power)</td>
+        <td class="equipment-table__td">
+          <a href="#" class="equipment-table__edit">Edit</a>
+        </td>
+        <td class="equipment-table__td">
+          <a href="#" class="equipment-table__delete">Delete</a>
+        </td>
+      </tr>
+      <tr class="equipment-table__tr">
+        <td class="equipment-table__td">(id)</td>
+        <td class="equipment-table__td">(name)</td>
+        <td class="equipment-table__td">(power)</td>
+        <td class="equipment-table__td">
+          <a href="#" class="equipment-table__edit">Edit</a>
+        </td>
+        <td class="equipment-table__td">
+          <a href="#" class="equipment-table__delete">Delete</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="buttons">
+    <a href="#" class="button__add" id="btnAdd">Add equipment</a>
+  </div>
+
+  <div id="editWindow" class="edit-window">
+    <div class="edit-window__background"></div>
+    <div class="edit-window__foreground">
+      <input type="hidden" id="fieldId" />
+
+      <label class="edit-window__label">
+        Name:
+        <input type="text" class="edit-window__input" id="fieldName" />
+      </label>
+      <label class="edit-window__label">
+        Power:
+        <input type="text" class="edit-window__input" id="fieldPower" />
+      </label>
+
+      <div class="edit-window__buttons">
+        <button id="btnSave">Save changes</button>
+        <button id="btnCancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

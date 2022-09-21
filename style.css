@@ -1,0 +1,104 @@
+/**
+ * CSS
+ */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+
+  background: #fff;
+  color: #032a56;
+}
+
+/**
+ * Equipment table.
+ */
+.equipment-table {
+  /* TODO! */
+
+  border: 1px solid #032a56;
+  border-collapse: collapse;
+}
+.equipment-table__thr {
+  background: #032a56;
+}
+.equipment-table__th {
+  padding: 10px;
+
+  color: #fff;
+}
+.equipment-table__tr:not(:last-child) {
+  border-bottom: 1px solid #032a56;
+}
+.equipment-table__td {
+  padding: 10px;
+}
+
+.equipment-table__edit {
+  color: #56562a;
+  font-weight: 600;
+}
+
+.equipment-table__delete {
+  color: #562a03;
+  font-weight: 600;
+}
+
+.buttons {
+  margin: 10px auto;
+  width: 200px;
+
+  text-align: center;
+}
+
+.button__add {
+  color: #2a5603;
+
+  font-weight: 600;
+}
+
+/**
+ * Edit window
+ */
+.edit-window {
+  display: none;
+}
+
+.edit-window__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: rgba(0,0,0,.6);
+}
+
+.edit-window__foreground {
+  position: absolute;
+  top: 50px;
+  left: calc(50vw - 150px);
+  width: 300px;
+  box-sizing: border-box;
+  padding: 10px;
+
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid #032a56;
+  box-shadow: 0 0 10px #032a56;
+}
+
+.edit-window__label {
+  font-weight: 600;
+}
+
+.edit-window__input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+}
+
+.edit-window__buttons {
+  margin-top: 10px;
+}
